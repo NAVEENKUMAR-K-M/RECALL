@@ -189,31 +189,6 @@ Gallery AI/
 
 ---
 
-## Getting Started
-
-### Prerequisites
-- **Android Studio Ladybug** (or newer)
-- **Android SDK** with API level 34+
-- **JDK 17**
-- Physical Android device (recommended: **iQOO 11/12** or Snapdragon 8 Gen 2/Gen 3 device for Hexagon NPU acceleration)
-
-### Build & Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/iQOO-Gallery.git
-   cd iQOO-Gallery
-   ```
-2. Open the project in Android Studio.
-3. Allow Gradle to sync dependencies.
-4. Connect your Android device via USB (with USB Debugging enabled).
-5. Run the application:
-   ```bash
-   ./gradlew installDebug
-   ```
-   Or launch directly via the Android Studio **Run** button.
-
----
-
 ## Testing & Quality Assurance
 
 The codebase includes automated unit test suites covering the core intelligence pipeline:
@@ -239,4 +214,4 @@ iQOO Gallery was designed from the first line of code to protect user privacy:
 
 ## License
 
-Copyright 2026 iQOO Hackathon Team. Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+Copyright 2026 OverClocked. Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
