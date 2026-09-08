@@ -14,20 +14,15 @@ It solves digital screenshot chaos by automatically indexing, understanding, cat
 
 ## Visual Showcase
 
-| Smart Collections Memory |
-| :---: |
-| <img src="screenshots/9.jpeg" width="300" alt="Smart Collections" /> |
-| **Auto-organized memory across 11 smart domains** |
-
 | Smart Subfolders (Finance) | Smart Subfolders (Shopping) | Instant search with real-time text matching & OCR |
 | :---: | :---: | :---: |
 | <img src="screenshots/1.jpeg" width="260" alt="Smart Subfolders (Finance)" /> | <img src="screenshots/4.jpeg" width="260" alt="Smart Subfolders (Shopping)" /> | <img src="screenshots/3.jpeg" width="260" alt="Instant search with real-time text matching & OCR" /> |
 | **Auto-generated subcategory cluster ("Swiggy")** | **Smart merchant subcategory cluster ("BikeWale")** | **Real-time text matching & OCR extraction** |
 
-| AI Organization Settings & Controls | Multi-Layer Intelligence Pipeline |
-| :---: | :---: |
-| <img src="screenshots/8.jpeg" width="280" alt="AI Organization Settings" /> | <img src="screenshots/7.jpeg" width="280" alt="AI Diagnostics & Status" /> |
-| **Automation toggles, thresholds & safe reset** | **Live pipeline stats: 60 indexed, 105 entities** |
+| AI Organization Settings & Controls | Multi-Layer Intelligence Pipeline | Smart Collections Memory |
+| :---: | :---: | :---: |
+| <img src="screenshots/8.jpeg" width="260" alt="AI Organization Settings" /> | <img src="screenshots/7.jpeg" width="260" alt="AI Diagnostics & Status" /> | <img src="screenshots/9.jpeg" width="260" alt="Smart Collections" /> |
+| **Automation toggles, thresholds & safe reset** | **Live pipeline stats: 60 indexed, 105 entities** | **Auto-organized memory across 11 smart domains** |
 
 | Qualcomm Hexagon NPU Acceleration | Hardware Architecture & Benchmarks |
 | :---: | :---: |
