@@ -16,67 +16,34 @@ It solves digital screenshot chaos by automatically indexing, understanding, cat
 
 | Smart Collections Memory | Real-Time Deep Search |
 | :---: | :---: |
-| ![Smart Collections](screenshots/9.jpeg) | ![Instant Smart Search](screenshots/3.jpeg) |
-| **Auto-organized memory across 11 smart domains (Work, Finance, Shopping, etc.)** | **Instant search with real-time text matching, OCR extraction & media filters** |
+| <img src="screenshots/9.jpeg" width="280" alt="Smart Collections" /> | <img src="screenshots/3.jpeg" width="280" alt="Instant Smart Search" /> |
+| **Auto-organized memory across 11 smart domains** | **Instant search with real-time text matching & OCR** |
 
 | Smart Subfolders (Finance) | Smart Subfolders (Shopping) |
 | :---: | :---: |
-| ![Finance Category Detail](screenshots/1.jpeg) | ![Shopping Category Detail](screenshots/4.jpeg) |
-| **Clustered payment screenshots with auto-generated subcategory ("Swiggy")** | **Product & pricing screenshots clustered under smart merchant subcategories** |
+| <img src="screenshots/1.jpeg" width="280" alt="Finance Category Detail" /> | <img src="screenshots/4.jpeg" width="280" alt="Shopping Category Detail" /> |
+| **Auto-generated subcategory cluster ("Swiggy")** | **Smart merchant subcategory cluster ("BikeWale")** |
 
 | AI Organization Settings & Controls | Multi-Layer Intelligence Pipeline |
 | :---: | :---: |
-| ![AI Organization Settings](screenshots/8.jpeg) | ![AI Diagnostics & Status](screenshots/7.jpeg) |
-| **Granular automation toggles, subfolder threshold sliders & safe reset** | **Live pipeline statistics: 60 indexed, 105 entities, 121 tags, 60 embeddings** |
+| <img src="screenshots/8.jpeg" width="280" alt="AI Organization Settings" /> | <img src="screenshots/7.jpeg" width="280" alt="AI Diagnostics & Status" /> |
+| **Automation toggles, thresholds & safe reset** | **Live pipeline stats: 60 indexed, 105 entities** |
 
 | Qualcomm Hexagon NPU Acceleration | Hardware Architecture & Benchmarks |
 | :---: | :---: |
-| ![Qualcomm Hexagon NPU](screenshots/6.jpeg) | ![NPU Benchmarks Telemetry](screenshots/5.jpeg) |
-| **Verified Qualcomm Hexagon NPU runtime (Gemma 2B INT4 HTP binary, 3ms)** | **Real-world Snapdragon 7s Gen 3 hardware detection & 3ms latency benchmarks** |
+| <img src="screenshots/6.jpeg" width="280" alt="Qualcomm Hexagon NPU" /> | <img src="screenshots/5.jpeg" width="280" alt="NPU Benchmarks Telemetry" /> |
+| **Verified NPU runtime (HTP binary, 3ms)** | **Snapdragon 7s Gen 3 hardware benchmarks** |
 
 ---
 
-## Key Features & Functionality
+## Key Features
 
-### 1. 100% Offline, Privacy-First AI Engine
-- **Zero Cloud Dependence**: All OCR, semantic reasoning, vector embedding, and entity extractions run entirely on-device. No network permissions required for AI processing.
-- **Autonomous Background Observer**: Monitors Android's `MediaStore` for new screenshots as they are taken, queueing them through Android `WorkManager` for immediate silent indexing.
-
-### 2. Intelligent Screenshot Categorization & Subfolders
-- **Automatic Classification**: Classifies screenshots into distinct domains:
-  - `Work` (job postings, coding snippets, resumes, corporate communications)
-  - `Education` (academic certificates, course materials, lectures, notes)
-  - `Finance` (receipts, transaction confirmations, invoices, banking alerts)
-  - `Food & Dining` (restaurant menus, delivery orders, recipes)
-  - `Shopping` (e-commerce orders, product price cards, cart summaries)
-  - `Travel` (boarding passes, ticket bookings, hotel reservations)
-  - `Technology` (developer tools, terminal output, system configs)
-  - `Social & Chat` (chat threads, social feeds)
-  - `Documents` & `Other` (general unsorted media)
-- **Dynamic Topic Subfolders**: Generates semantic subfolders (e.g. `Work -> Intern`, `Education -> Adobe`) when threshold count is reached, keeping libraries tidy.
-- **Strict Idempotency & Safety**: Original photos and screenshots in the filesystem are never altered or deleted.
-
-### 3. OCR Text Extraction & Semantic Entity Discovery
-- **Full-Text OCR Extraction**: High-accuracy on-device text recognition pulls every visible word from screenshots.
-- **Entity Extraction**: Automatically identifies structured entities:
-  - URLs & Deep Links (with 1-tap copy)
-  - OTPs & Verification Codes
-  - Tracking Numbers & Order IDs
-  - Dates, Monetary Amounts, and Account Identifiers
-- **Structured Knowledge Cards**: Formats complex documents (like professional certificates or invoices) into structured fields: recipient, issuing body, credentials, dates.
-
-### 4. Real-Time Deep Search
-- **Universal Multi-Modal Search**: Search simultaneously across:
-  - Raw OCR extracted text
-  - AI domain categories and subfolder topics
-  - Discovered named entities (e.g., "Swiggy", "INE Security", "Google", "GitHub")
-  - Semantic tags (`#Cybersecurity`, `#Intern`, `#Invoice`)
-- **Quick-Access Filter Chips**: Filter instantaneously by Media Type (`All`, `Screenshots`, `Photos`, `Videos`, `Camera`).
-
-### 5. Liquid Glass Design System
-- **Curated Aesthetics**: Built strictly with Jetpack Compose using dynamic frosted glass materials, dark mode gradients, fine borders, and smooth spring physics.
-- **Fluid Floating Dock**: Minimalist bottom navigation with contextual icon expansion and haptic transitions.
-- **Immersive Media Viewer**: High-performance zoomable viewer with pinch-to-zoom, swipe gestures, video playback, and swipe-up AI Insights sheet.
+- **🔒 100% Offline AI Privacy**: OCR, semantic reasoning, and embeddings run completely on-device. Zero cloud calls, zero data leakage.
+- **📂 Smart Screenshot Categorization**: Automatically organizes screenshots into 11 domains (Finance, Shopping, Work, etc.) with dynamic topic subfolders (e.g. *Finance → Swiggy*).
+- **🔍 Multi-Modal Deep Search**: Real-time search across raw OCR text, AI categories, subfolders, and entities with fast media filter chips.
+- **📋 Instant Entity Extraction**: Extracts URLs, OTPs, tracking numbers, transaction amounts, and dates with 1-tap copy action cards.
+- **⚡ Qualcomm Hexagon NPU Acceleration**: Native QNN HTP hardware acceleration delivering sub-5ms inference with safe local CPU fallback.
+- **✨ Liquid Glass Interface**: Bespoke Jetpack Compose design featuring frosted glass aesthetics, smooth spring physics, and an interactive media viewer.
 
 ---
 
@@ -197,7 +164,7 @@ The screenshot AI diagnostics engine tracks cold-start and warm inference latenc
 
 | Qualcomm Hexagon NPU Verified | NPU & Hardware Benchmarks |
 | :---: | :---: |
-| ![NPU Verified](screenshots/6.jpeg) | ![Benchmark Diagnostics](screenshots/5.jpeg) |
+| <img src="screenshots/6.jpeg" width="280" alt="NPU Verified" /> | <img src="screenshots/5.jpeg" width="280" alt="Benchmark Diagnostics" /> |
 | **On-Device LLM & HTP context execution verification** | **Live telemetry showing 3ms latency on Snapdragon 7s Gen 3** |
 
 ---
