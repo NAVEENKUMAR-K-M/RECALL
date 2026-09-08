@@ -12,7 +12,18 @@ It solves digital screenshot chaos by automatically indexing, understanding, cat
 
 ---
 
-## Visual Showcase
+## Key Features
+
+| Feature | Description |
+| :--- | :--- |
+| **🔒 100% Offline AI Privacy** | OCR, semantic reasoning, and embeddings run completely on-device. Zero cloud calls. |
+| **📂 Smart Screenshot Categorization** | Organizes screenshots into 11 domains with dynamic topic subfolders (e.g. *Finance → Swiggy*). |
+| **🔍 Multi-Modal Deep Search** | Real-time search across raw OCR text, AI categories, subfolders, and entities with filter chips. |
+| **📋 Instant Entity Extraction** | Extracts URLs, OTPs, tracking numbers, transaction amounts, and dates with 1-tap copy cards. |
+| **⚡ Qualcomm Hexagon NPU** | Native QNN HTP hardware acceleration delivering sub-5ms inference with safe local fallback. |
+| **✨ Liquid Glass Interface** | Jetpack Compose design featuring frosted glass aesthetics, spring physics, and media viewer. |
+
+### Visual Showcase
 
 | Smart Subfolders (Finance) | Smart Subfolders (Shopping) | Instant search with real-time text matching & OCR |
 | :---: | :---: | :---: |
@@ -28,17 +39,6 @@ It solves digital screenshot chaos by automatically indexing, understanding, cat
 | :---: | :---: |
 | <img src="screenshots/6.jpeg" width="280" alt="Qualcomm Hexagon NPU" /> | <img src="screenshots/5.jpeg" width="280" alt="NPU Benchmarks Telemetry" /> |
 | **Verified NPU runtime (HTP binary, 3ms)** | **Snapdragon 7s Gen 3 hardware benchmarks** |
-
----
-
-## Key Features
-
-- **🔒 100% Offline AI Privacy**: OCR, semantic reasoning, and embeddings run completely on-device. Zero cloud calls, zero data leakage.
-- **📂 Smart Screenshot Categorization**: Automatically organizes screenshots into 11 domains (Finance, Shopping, Work, etc.) with dynamic topic subfolders (e.g. *Finance → Swiggy*).
-- **🔍 Multi-Modal Deep Search**: Real-time search across raw OCR text, AI categories, subfolders, and entities with fast media filter chips.
-- **📋 Instant Entity Extraction**: Extracts URLs, OTPs, tracking numbers, transaction amounts, and dates with 1-tap copy action cards.
-- **⚡ Qualcomm Hexagon NPU Acceleration**: Native QNN HTP hardware acceleration delivering sub-5ms inference with safe local CPU fallback.
-- **✨ Liquid Glass Interface**: Bespoke Jetpack Compose design featuring frosted glass aesthetics, smooth spring physics, and an interactive media viewer.
 
 ---
 
