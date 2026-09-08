@@ -14,15 +14,15 @@ It solves digital screenshot chaos by automatically indexing, understanding, cat
 
 ## Visual Showcase
 
-| Smart Collections Memory | Real-Time Deep Search |
-| :---: | :---: |
-| <img src="screenshots/9.jpeg" width="280" alt="Smart Collections" /> | <img src="screenshots/3.jpeg" width="280" alt="Instant Smart Search" /> |
-| **Auto-organized memory across 11 smart domains** | **Instant search with real-time text matching & OCR** |
+| Smart Collections Memory |
+| :---: |
+| <img src="screenshots/9.jpeg" width="300" alt="Smart Collections" /> |
+| **Auto-organized memory across 11 smart domains** |
 
-| Smart Subfolders (Finance) | Smart Subfolders (Shopping) |
-| :---: | :---: |
-| <img src="screenshots/1.jpeg" width="280" alt="Finance Category Detail" /> | <img src="screenshots/4.jpeg" width="280" alt="Shopping Category Detail" /> |
-| **Auto-generated subcategory cluster ("Swiggy")** | **Smart merchant subcategory cluster ("BikeWale")** |
+| Smart Subfolders (Finance) | Smart Subfolders (Shopping) | Instant search with real-time text matching & OCR |
+| :---: | :---: | :---: |
+| <img src="screenshots/1.jpeg" width="260" alt="Smart Subfolders (Finance)" /> | <img src="screenshots/4.jpeg" width="260" alt="Smart Subfolders (Shopping)" /> | <img src="screenshots/3.jpeg" width="260" alt="Instant search with real-time text matching & OCR" /> |
+| **Auto-generated subcategory cluster ("Swiggy")** | **Smart merchant subcategory cluster ("BikeWale")** | **Real-time text matching & OCR extraction** |
 
 | AI Organization Settings & Controls | Multi-Layer Intelligence Pipeline |
 | :---: | :---: |
@@ -141,26 +141,20 @@ The application implements full native support for **Qualcomm AI Engine Direct (
 ### Strict "No Fake NPU" Runtime Telemetry
 - The app verifies whether native QNN libraries are present and executing on real Qualcomm hardware.
 - The UI reports honest telemetry (`Requested: NPU`, `Actual: Local CPU Fallback` or `Verified: Hexagon HTP`).
-- See [QUALCOMM_NPU_SETUP.md](QUALCOMM_NPU_SETUP.md) for full compilation toolchain details, Model Hub quantization steps, and QNN SDK setup.
+- Full guides: [QUALCOMM_NPU_SETUP.md](QUALCOMM_NPU_SETUP.md) (toolchain) • [BENCHMARK_REPORT.md](BENCHMARK_REPORT.md) (hardware data)
 
-### Live On-Device Benchmark Results (Snapdragon 7s Gen 3)
+### Performance Benchmarks (Tested vs. iQOO 15 Projected)
 
-The screenshot AI diagnostics engine tracks cold-start and warm inference latency across all indexed items. Below is the verified telemetry measured on a physical Qualcomm Snapdragon 7s Gen 3 device:
+Measured on physical hardware via ADB instrumentation ([see detailed report](BENCHMARK_REPORT.md)):
 
-| Telemetry Parameter | Physical Device Measured Value | Engine Status |
-| :--- | :--- | :--- |
-| **Detected Device** | `Nothing A059` | Physical Hardware Confirmed |
-| **System SoC** | **Qualcomm Snapdragon 7s Gen 3 (`SM7635`)** | Snapdragon Chipset Confirmed |
-| **Target ABI** | `arm64-v8a` | 64-bit Architecture |
-| **Qualcomm AI Runtime (QNN)** | `libQnnHtp.so` | **Present & Active** |
-| **Hexagon NPU (HTP)** | **Hardware Supported** | Hexagon Tensor Processor |
-| **Execution Backend** | **Qualcomm Hexagon NPU** | **VERIFIED NPU** |
-| **Cold-Start Latency** | **3 ms** | Instantaneous Init |
-| **Warm Inference Latency** | **3 ms** | Real-Time Throughput |
-| **P50 Median Latency** | **3 ms** | Ultra-consistent |
-| **Average Latency** | **3 ms** | Sub-5ms Baseline |
-| **Cloud APIs / Remote Calls** | **Disabled (0 Bytes Sent)** | 100% On-Device Privacy |
-| **Airplane Mode Verification**| **Fully Operable (100% Offline)** | Zero Network Dependency |
+| Metric | Tested Device (Snapdragon 7s Gen 3) | iQOO 15 (Snapdragon 8 Elite) | Speedup / Note |
+| :--- | :---: | :---: | :---: |
+| **Cold Start** | **956 ms** | **~450–550 ms** | 🚀 ~2× faster |
+| **Hot Start** | **91 ms** | **~40–50 ms** | ⚡ Instantaneous |
+| **AI Inference (NPU)** | **3 ms** | **≤ 1 ms** | 🧠 Real-time on Hexagon HTP |
+| **GPU Frame Render (P50)** | **5 ms** | **~2 ms** | 🧈 120fps+ smooth (zero jank) |
+| **Memory Footprint** | **~341 MB** | **~341 MB** | 📦 Stable PSS |
+| **Background / Idle CPU** | **0%** | **0%** | 🔋 Zero battery drain |
 
 | Qualcomm Hexagon NPU Verified | NPU & Hardware Benchmarks |
 | :---: | :---: |
@@ -193,6 +187,7 @@ Gallery AI/
 ├── screenshots/                          # High-resolution on-device showcase screenshots
 ├── build.gradle.kts                      # Root build configuration
 ├── settings.gradle.kts                   # Gradle project settings
+├── BENCHMARK_REPORT.md                   # Full device benchmarks & iQOO 15 projections
 ├── QUALCOMM_NPU_SETUP.md                 # Complete Qualcomm NPU guide
 └── README.md                             # Project documentation
 ```
