@@ -1,0 +1,31 @@
+package com.aigallery.app.data.database
+
+import androidx.room.Dao
+import androidx.room.Entity
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.PrimaryKey
+import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
+
+@Entity(tableName = "favorites")
+data class FavoriteEntity(
+    @PrimaryKey
+    val mediaId: Long,
+    val addedAt: Long = System.currentTimeMillis()
+)
+
+@Dao
+interface FavoriteDao {
+    @Query("SELECT mediaId FROM favorites ORDER BY addedAt DESC")
+    fun getAllFavoriteIds(): Flow<List<Long>>
+
+    @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE mediaId = :mediaId)")
+    fun isFavorite(mediaId: Long): Flow<Boolean>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertFavorite(favorite: FavoriteEntity)
+
+    @Query("DELETE FROM favorites WHERE mediaId = :mediaId")
+    suspend fun deleteFavorite(mediaId: Long)
+}
